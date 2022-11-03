@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>main</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" language="javascript">
+function popupWindow(url)
+{
+Mywindow = window.open(url,"MyWindow","config='toolbar=no, menubar=no,scrollbars=no,resizable=no,location=no,directories=no,status=no, height=500, width=400', letf=500, top=200");
+
+}
+function closeWindow()
+{
+Mywindow.close()
+
+}
+Banners = new Array('student.png','student1.jpg')
+
+BannerLink = new Array(
+'myLink1.com','myLink2.com')
+
+CurrentBanner = 0
+
+NumOfBanners = Banners.length
+function
+LinkBanner()
+{
+
+document.location.href =
+"http://www." + BannerLink[CurrentBanner]
+
+}
+
+function DisplayBanners() 
+{
+
+if (document.images) 
+{
+
+CurrentBanner++
+
+if (CurrentBanner == NumOfBanners)
+{
+
+CurrentBanner = 0
+
+}
+
+document.RotateBanner.src= Banners[CurrentBanner]
+setTimeout("DisplayBanners()",1000)
+
+}
+
+}
+</script>
+
+</head>
+
+<body onload="DisplayBanners()">
+
+<header>
+
+<logo>Streamer</logo>
+
+<nav>
+
+<ul>
+
+<a href="index.html">Home</a>
+
+<a href="player.html">Web player!</a>
+
+<a href="signin.html">Sign in</a>
+
+<a href="aboutus.html">About us</a>
+
+</ul>
+
+</nav>
+
+<button onmouseover="popupWindow('window.html')" onmouseout="closeWindow()">Information</button>
+</header>
+
+<main>
+<section class="left">
+<p class="aboutp">
+This website allows us to play audio files on our local machine. Site is devoloped by
+ <b>Pratik Bangal</b>
+ <b>Trupti Shinde</b> 
+<b>Kunal Tilekar</b>
+<b>Supriya Sutar</b>
+in third year diploma in computer engineering in Government Polytechnic, Pune.
+	
+<br>
+<br>
+	
+Website is purely developed in HTML5, CSS and JavaScript by using Sublime Text as editor and 
+Google Chrome as testing browser. 
+
+
+</p>
+<br>
+
+<p class="aboutp" align="right">
+Devolopers : 
+</p><br>
+
+<p class="aboutp" align="right">Pratik Bangal</p>
+
+<p class="aboutp" align="right">Trupti Shinde</p>
+
+<p class="aboutp" align="right">Kunal Tilekar</p>
+
+<p class="aboutp" align="right">Supriya Sutar</p>
+
+</section>
+
+<section class="rightex">
+<figure>
+
+<a href="javascript: LinkBanner()">
+<img src="profile.jpg"
+width="400" height="500" name="RotateBanner" /></a>
+</figure>
+
+</section>
+
+</main>
+
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+*
+{
+
+margin: 0;
+padding: 0;
+
+font-family: Comic Sans MS;
+
+}
+
+
+h1
+{
+text-align: center;
+font-size: 1.8rem;
+color: white;
+
+padding: 20px 0;
+
+}
+
+
+main
+{
+width: 90%;
+height: 530px;
+
+margin: auto;
+
+border: 1px solid grey;
+
+justify-content: space-around;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+border-radius: 10px;
+box-sizing: border-box;
+position: absolute;
+margin-left: 70px;
+margin-top: 40px;
+
+}
+
+
+div
+{
+width: 30%;
+height: 140px;
+box-shadow: 2px 2px 5px grey;
+border-radius: 10px;
+cursor: pointer;
+
+}
+
+
+.a
+{
+background-image: url('allweknow.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+
+.a:hover
+{
+background-image: url('allweknow.png');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+
+.b
+{
+background-image: url('badblood.jpg');
+background-repeat: no-repeat;
+
+background-size: 100% 100%;
+
+}
+
+
+.b:hover
+{
+background-image: url('badblood.png');
+
+background-repeat: no-repeat;background-size: 100% 100%;
+
+}
+
+
+.c
+{
+background-image: url('idontcare.jpg');
+
+background-repeat: no-repeat;
+
+background-size: 100% 100%;
+
+}
+
+
+.c:hover
+{
+background-image: url('idontcare.png');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+
+.d
+{
+background-image: url('lovestory.jpg');
+
+background-repeat: no-repeat;
+
+background-size: 100% 100%;
+
+}
+
+
+.d:hover
+{
+background-image: url('lovestory.png');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+
+.e
+{
+background-image: url('neverendingstory.jpg');
+background-repeat: no-repeat;
+
+background-size: 100% 100%;
+
+}
+
+
+.e:hover
+{
+background-image: url('neverendingstory.png');
+background-repeat: no-repeat;
+
+background-size: 100% 100%;
+
+}
+
+
+.f
+{
+background-image: url('onmyway.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+
+.f:hover
+{
+background-image: url('onmyway.png');
+
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+
+.g
+{
+
+background-image: url('pehlapyaar.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+
+.g:hover
+{
+background-image: url('pehlapyaar.png');
+
+background-repeat: no-repeat;
+
+background-size: 100% 100%;
+
+}
+
+.h
+{
+background-image: url('seeyouagain.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+.h:hover
+{
+background-image: url('images/roll/seeyouagain.png');
+
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+
+.i
+{
+background-image: url('whatdoyoumean.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+
+
+.i:hover
+{
+background-image: url('whatdoyoumean.png');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+
+*
+{
+
+margin: 0;
+
+padding: 0;
+
+font-family: Comic Sans MS;
+
+}
+
+
+body
+{
+background-image: url(background.png);
+background-size : cover;
+
+}
+
+
+h1
+{
+text-align: center;
+
+font-size: 1.8rem;
+
+color: white;
+padding: 20px 0;
+
+}
+
+
+
+logo
+{
+float: left;
+
+font-size: 40px;
+margin-top: 9px;
+
+margin-left: 50px;
+letter-spacing: 30px;
+color: white;
+
+font-weight: bolder;
+animation-name : title;
+
+animation-duration : 5s;
+animation-iteration-count : infinite;
+
+}
+
+
+header
+{
+width: 100%;
+
+height: 50px;
+display: flex;
+justify-content: space-between;
+
+align-items: center;
+
+}
+
+header nav
+{
+width: 450px;
+display: inline-block;
+
+justify-content: space-between;
+align-items: center;
+
+margin-top: 10px;
+
+}
+
+
+header nav a
+{
+padding: 10px 10px;
+
+text-decoration: none;
+
+color: white;
+
+text-transform: uppercase;
+margin-right: 10px;
+
+}
+
+
+header button
+{
+float: right;
+	
+padding: 10px 30px;
+
+font-size: 14px;
+border: none;
+color: white;
+background-image: linear-gradient(59deg, blue, aqua);
+border-radius: 14px;
+
+margin-right: 50px;
+
+}
+
+
+header nav a:hover
+{
+border: 1px solid grey;
+
+}
+
+
+@keyframes title
+{
+0%
+{
+color : white
+}
+25%
+{
+color : yellow
+}
+50%
+{
+color : red
+}
+75%
+{
+color : aqua
+}
+100%
+{
+color : pink
+}
+
+}

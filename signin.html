@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>main</title>
+<link rel="stylesheet" type="text/css" href="signin.css">
+
+<script type="text/javascript" language="javascript">
+
+function generateEmail(fname)
+{
+fname = fname.replace(/\s/g,'');
+email.value = fname+'@streamer.com'
+}
+function checkMobile(number)
+{
+var phoneno = /^\d{10}$/;
+
+if(number.match(phoneno))
+{
+return true;
+}
+
+else
+{
+alert('not a valid mobile number');
+}
+
+}
+
+var password;
+
+
+function checkPass1(password1)
+{
+password = password1;
+var check = /^[A-Za-z]\w{7,14}$/
+if(password.match(check))
+return true;
+	
+else
+alert('password must be 7-16 char long, must contain only char, digits, underscore and first char must be letter')
+
+checkPass2(password)
+}
+function checkPass2(password2) 
+{
+
+if(password==password2)
+return true
+else
+
+alert('password does not match')
+
+}
+
+function popupWindow(url)
+{
+Mywindow = window.open(url,"MyWindow","config='toolbar=no, menubar=no,scrollbars=no,resizable=no,location=no,directories=no,status=no, height=500, width=400', letf=500, top=200");
+	    }
+function closeWindow() 
+{
+Mywindow.close()
+
+}
+</script>
+
+</head>
+
+<body>
+	
+<header>
+
+<logo>Streamer</logo>
+
+<nav>
+
+<ul>
+<a href="index.html">Home</a>
+
+<a href="player.html">Web player!</a>
+<a href="signin.html">Sign in</a>
+
+<a href="aboutus.html">About us</a>
+
+</ul>
+</nav>
+<button onmouseover="popupWindow('window.html')" onmouseout="closeWindow()">User</button>
+
+</header>
+
+<main>
+
+<section class="left">
+
+<form name="signin" method="post">
+
+<input type="text" name="name" id="name" placeholder="your name" onblur="generateEmail(this.value)"><br>
+<input type="text" name="email" id="email" placeholder="email-ID"><br>
+				
+<input type="text" name="mobile" id="mobile" placeholder="mobile no" onblur="checkMobile(this.value)"><br>
+
+<input type="password" name="pass1" id="pass1" placeholder="decide password" onblur="checkPass1(this.value)"><br>
+
+<input type="password" name="pass2" id="pass2" placeholder="confirm password" onblur="checkPass2(this.value)"><br>
+
+<button><a href="player.html">Sign in</a></button>
+
+</form>
+</section>
+<section class="right">
+
+<figure>
+
+<img src="logo.png">
+</figure>
+</section>
+
+</main>
+
+
+</body>
+
+</html>

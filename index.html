@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>main</title>
+	
+<link rel="stylesheet" type="text/css" href="style.css">
+	
+<script type="text/javascript" language="javascript">
+
+function popupWindow(url) 
+{
+
+ Mywindow = window.open(url,"MyWindow","config='toolbar=no, menubar=no,scrollbars=no,resizable=no,location=no,directories=no,status=no, height=500, width=400', letf=500, top=200");
+	    
+}
+
+
+function closeWindow() 
+{
+
+Mywindow.close()
+	
+}
+	
+</script>
+
+</head>
+
+<body>
+
+<header>
+	
+<logo>Streamer</logo>
+	
+<nav>
+		
+<ul>
+			
+<a href="index.html">Home</a>
+		
+<a href="player.html">Web player!</a>
+			
+<a href="signin.html">Sign in</a>
+		
+<a href="aboutus.html">About us</a>
+
+</ul>
+	
+</nav>
+
+<button onmouseover="popupWindow('window.html')" onmouseout="closeWindow()">Information</button>
+
+</header>
+
+
+<main>
+		
+<section class="left">
+		
+<h2>Without music, life would be a mistake</h2>
+
+<h1 class="line">We are the best streamers!!</h1>
+	
+<h2>Music has healing power. It has the ability to take people out of themselves for a few hours.</h2>
+		
+<button>
+<a href="signin.html">Sign in</a>
+</button>
+
+</section>
+			
+	
+<section class="right">
+			
+<figure>
+		
+<img src="logo.png" >
+
+</figure>
+	
+</section>
+
+</main>
+
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+*
+{
+margin: 0;
+
+padding: 0;
+
+font-family: Comic Sans MS;
+
+}
+
+
+body
+{
+background-image: url(background.png);
+
+background-size : cover;
+
+}
+
+
+h1
+{
+text-align: center;
+font-size: 1.8rem;
+color: white;
+
+padding: 20px 0;
+
+}
+
+
+
+logo
+{
+float: left;
+font-size: 40px;
+margin-top: 9px;
+margin-left: 50px;
+letter-spacing: 30px;
+
+color: white;
+font-weight: bolder;
+animation-name : title;
+
+animation-duration : 5s;
+animation-iteration-count : infinite;
+
+}
+
+
+header
+{
+width: 100%;
+
+height: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+header nav
+{
+
+width: 450px;
+display: inline-block;
+justify-content: space-between;
+
+align-items: center;
+
+margin-top: 10px;
+
+}
+
+
+header nav a
+{
+padding: 10px 10px;
+
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+margin-right: 10px;
+
+}
+
+
+header button
+{
+float: right;
+	padding: 10px 30px;
+
+font-size: 14px;
+
+border: none;
+color: white;
+background-image: linear-gradient(59deg, blue, aqua);
+border-radius: 14px;
+
+margin-right: 50px;
+
+}
+
+
+header nav a:hover
+{
+border: 1px solid grey;
+
+}
+
+
+@keyframes title
+{
+0%
+{
+color : white
+}
+
+25%
+{
+color : yellow
+}
+50%
+{
+color : red
+}
+75%
+{
+color : aqua
+}
+100%
+{
+color : pink
+}
+
+}
+
+
+main
+{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+main .right
+{
+padding-right: 150px;
+
+}
+
+
+main .left
+{
+padding-left: 50px;
+text-align: center;
+
+}
+
+
+main img
+{
+height: 550px;
+margin-top: 20px;
+
+}
+
+
+main h1
+{
+font-size: 40px;
+
+}
+
+
+main button:hover
+{
+letter-spacing: 8px;
+
+}
+
+
+main h2
+{
+color: grey;
+
+}
+
+
+main .left button
+{
+padding: 5px 80px;
+font-size: 24px;
+
+border: none;
+
+color: white;
+background-image: linear-gradient(59deg, blue, aqua);
+border-radius: 14px;
+margin-top: 30px;
+
+}
+
+
+main .left button a
+{
+text-decoration: none;
+	color: white;
+
+}
+
+
+
+main form input
+{
+padding: 8px 130px;
+
+margin-top: 10px;
+background-color: white;
+font-size: 20px;
+text-align: center;
+border-radius: 10px;
+border: none;
+
+}
+
+
+form
+{
+margin-left: 100px;
+
+}
+
+
+main p
+{
+color: white;
+font-size: 20px;
+margin-left: 150px;
+}
